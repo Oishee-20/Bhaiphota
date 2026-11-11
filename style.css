@@ -1,0 +1,173 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background: #f8e9e5;
+    color: #51413d;
+    font-family: 'Nunito', sans-serif;
+}
+
+.scrapbook {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px 25px;
+    background: #fffaf1;
+    border: 2px solid #ead9c9;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px #a77e7020;
+    text-align: center;
+}
+
+.small-note, .section-note {
+    color: #9a7770;
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
+}
+
+.eyebrow {
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #b17c78;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(45px, 8vw, 75px);
+    margin: 15px 0;
+}
+
+h1 span {
+    color: #c77e86;
+}
+
+.intro {
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+button {
+    background: #c77e86;
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #a95f6b;
+    transform: translateY(-2px);
+}
+
+.letter {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.paper {
+    background: #fff0df;
+    padding: 30px;
+    border: 1px dashed #d8ad9c;
+    transform: rotate(-1deg);
+    line-height: 1.9;
+    text-align: left;
+}
+
+.handwriting, .signature {
+    font-family: 'Caveat', cursive;
+    font-size: 29px;
+    color: #a95f6b;
+}
+
+.signature {
+    text-align: right;
+}
+
+.memories, .facts, .final {
+    margin-top: 65px;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 36px;
+    color: #a95f6b;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.polaroid {
+    background: white;
+    padding: 12px 12px 5px;
+    box-shadow: 0 5px 15px #604b401c;
+    transform: rotate(-2deg);
+}
+
+.polaroid:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #f1dfd8;
+}
+
+.polaroid p {
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
+}
+
+.fact {
+    background: #f8e9e5;
+    padding: 13px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+#finalMessage {
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    line-height: 1.8;
+    color: #a95f6b;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 60px;
+    color: #a78a81;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        gap: 12px;
+    }
+
+    .scrapbook {
+        padding: 25px 15px;
+    }
+
+    .paper {
+        padding: 20px;
+    }
+}
